@@ -1,0 +1,37 @@
+<script src="js/newDiary.js"></script>
+
+<div data-dojo-type="dojox.mobile.Switch" class="mblItemSwitch"></div>
+
+<label for="text_dairy">What happened to you today ?</label>
+<textarea id="text_dairy" name="text"></textarea>
+<input id="emo-button" type="image" src="images/packs/basic/images/smiley.png" width="24" height="24" style="float: right; margin-right: 72px">
+
+<label for="feeling_dairy">How are your feelings ?</label>
+<textarea type="text" id="feeling_dairy" name="feeling" style="width: 100%"></textarea>
+<input id="emo-button-2" type="image" src="images/packs/basic/images/smiley.png" width="24" height="24" style="float: right; margin-right: 72px">
+
+<label >Select category :</label>
+<div data-dojo-type="dojox.mobile.ListItem">
+    <select id="catList" data-dojo-type="dijit.form.DataList" data-dojo-props="id:'dataListId'">
+        <option selected="selected"></option>
+    </select> 
+    <!-- <input type="text" data-dojo-type="dojox.mobile.ComboBox" data-dojo-props="list:'dataListId'"> -->
+</div>
+
+<img style="display:none;width:120px;height:120px;" id="imageTag" src="" />
+<button id="removeImg" onclick="currentPage.removePhoto()"> Remove Photo </button>
+
+<div style="margin-top: 10px">
+    <button type="submit" onclick="currentPage.addPhoto();"
+    style="width: 100%; color: black" class="mblBlueButton" id="btn_addphoto" >Add photo</button>
+</div>
+
+<div style="margin-top: 10px">
+    <button type="submit" onclick="currentPage.capPhoto();"
+    style="width: 100%; color: black" class="mblBlueButton" id="btn_capphoto" >Capture photo</button>
+</div>
+
+<div style="margin-top: 10px">
+    <button type="submit"
+    style="width: 100%; color: black" class="mblBlueButton" id="btn_save" >Save !</button>
+</div>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed Materials - Property of IBM
+    5725-I43 (C) Copyright IBM Corp. 2011, 2013. All Rights Reserved.
+    US Government Users Restricted Rights - Use, duplication or
+    disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<wl:adapter name="DiaryMySQL"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:wl="http://www.ibm.com/mfp/integration"
+	xmlns:sql="http://www.ibm.com/mfp/integration/sql">
+
+	<displayName>DiaryMySQL</displayName>
+	<description>DiaryMySQL</description>
+	<connectivity>
+		<connectionPolicy xsi:type="sql:SQLConnectionPolicy">
+			<!-- Example for using a JNDI data source, replace with actual data source name -->
+			<!-- <dataSourceJNDIName>java:/data-source-jndi-name</dataSourceJNDIName> -->
+			
+			<!-- Example for using MySQL connector, do not forget to put the MySQL connector library in the project's lib folder -->
+			<dataSourceDefinition>
+				<driverClass>com.mysql.jdbc.Driver</driverClass>
+				<url>jdbc:mysql://sql3.freemysqlhosting.net:3306/sql377528</url>
+			    <user>sql377528</user>
+    			<password>zS4!hC3*</password> 
+			</dataSourceDefinition>
+		</connectionPolicy>
+	</connectivity>
+	
+	<procedure name="getDiaryInfos"> </procedure>
+	<procedure name="addDiaryInfo"> </procedure>
+	<procedure name="updateDiaryInfo"> </procedure>
+	<procedure name="deleteDiaryInfo"> </procedure>
+	
+	<procedure name="getUserInfos"> </procedure>
+	<procedure name="findUser"> </procedure>
+	<procedure name="addUserInfo"> </procedure>
+	<procedure name="updateUserInfo"> </procedure>
+	<procedure name="deleteUserInfo"> </procedure>
+	
+	<procedure name="getCategoryInfos"> </procedure>
+	<procedure name="addCategoryInfo"> </procedure>
+	<procedure name="updateCategoryInfo"> </procedure>
+	<procedure name="deleteCategoryInfo"> </procedure>
+	
+	
+</wl:adapter>

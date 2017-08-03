@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="APT_Diary">
+        <wb-resource deploy-path="/" source-path="/apps/DiaryAPP/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Diary/common"/>
+        <wb-resource deploy-path="/" source-path="/www"/>
+        <wb-resource deploy-path="/" source-path="/apps/Diary/android"/>
+        <wb-resource deploy-path="/" source-path="/server/java"/>
+        <property name="context-root" value="APT_Diary"/>
+    </wb-module>
+</project-modules>

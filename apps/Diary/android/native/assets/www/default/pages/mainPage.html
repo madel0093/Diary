@@ -1,0 +1,49 @@
+<script>
+$.getScript(path + "js/mainPage.js");
+</script>
+
+<div id='status-field'>Collection (Diary) not initialized</div>
+<hr>
+<input id='init-username' class='input-line-2' type='text' placeholder='user (optional)' />
+<input id='init-password' class='input-line-2' type='text' placeholder='pass (optional)' />
+
+<button id='init' class='button-line-1'>Initialize (Login/Open)</button>
+<button id='close' class='button-line-1'>Close All (Logout)</button>
+
+<hr>
+
+<button id='destroy' class='button-line-1'>Destroy Everything</button>
+<button id='remove-collection' class='button-line-1'>Remove Collection</button>
+
+<hr>
+
+<input id='add-title' class='input-line-1' type='text' placeholder='Enter Title' />
+<textarea id='add-description' class='input-line-1' placeholder='Enter Description'></textarea>
+<button id='add-data' class='button-line-1'>Add Data</button>
+
+<hr>
+
+<input id='find-search-title' class='input-line-1' type='text' placeholder='Search Title' />
+<button id='find-title' class='button-line-1'>Find By Title</button>
+<button id='find-all' class='button-line-1'>Find All</button>
+
+<input id='find-id' class='input-line-2' type='text' placeholder='Enter Id' />
+<button id='find-id-btn' class='button-line-2'>Find (by id)</button>
+<hr>
+
+<!-- Update Not Synchronized
+
+<input id='replace-title' class='input-line-1' type='text' placeholder='Enter Title' />
+<textarea id='replace-description' class='input-line-1' placeholder='Enter Descripiton'></textarea>
+<input id='replace-id' class='input-line-2' type='text' placeholder='Enter Id' />
+<button id='replace' class='button-line-2'>Replace (by id)</button>
+<hr>
+
+-->
+
+<input id='remove-id' class='input-line-2' type='text' placeholder='Enter Id' />
+<button id='remove-id-btn' class='button-line-2'>Remove (by id)</button>
+
+<button id='load' class='button-line-1'>Load Data From Adapter</button>
+<button id='get-push-required' class='button-line-1'>Get Push Required</button>
+<button id='push' class='button-line-1'>Push Changes to Adapter</button>
